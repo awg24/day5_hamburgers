@@ -1,3 +1,24 @@
+body {
+	float:left;
+}
+input {
+	position: absolute;
+	z-index: 1;
+	float:left;
+	top: 11px;
+	left: 12px;
+	height: 16px;
+	width: 24px;
+	opacity: 0;
+}
+	input[type=checkbox]:checked ~ div{
+		position: absolute;
+		float: left;
+		height: 100%;
+		width: 50px;
+		background: LightGray;
+	}
+
 .hamburger {
 	span {
 
@@ -8,6 +29,7 @@
 		background: black;
 		position: absolute;
 		top:10px;
+
 	}
 	span::before {
 		display: inline-block;
